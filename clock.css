@@ -1,0 +1,36 @@
+html,
+body{
+    height: 40vh;
+}
+body{
+    display: unset;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1 {
+    position:absolute;
+    font-size: 60px;
+    transform: 
+       translate(+72%,-140%);
+    animation: 
+        morph-effect 10s
+        infinite ease-in-out;
+}
+
+h1:nth-child(1){
+    animation-delay: -10s;
+}
+h1:nth-child(2){
+    animation-delay: -5s;
+}
+@keyframes morph-effect {
+    0%, 20%, 100%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+    40%, 80% {
+        filter: blur(16px);
+        opacity: 0;
+    }
+}
