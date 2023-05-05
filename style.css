@@ -1,20 +1,31 @@
+.button{
+  background-color: #2f4f4f;
+  position: relative;
+  border: none;
+  color: #fff;
+  border-radius: 200px;
+  padding: 30px;
+
+}
+
 .timeline {
+  top: 100px;
   position:absolute ;
   left: 10px;
-  max-width: 400px;
+  max-width: 380px;
   margin: 0 auto;
 
 }
 
 .timeline::before {
   content: '';
-  position: absolute;
+  position:absolute;
   top: 0;
   left: 50%;
   margin-left: -3px;
   width: 6px;
   height: 100%;
-  background: #ccc; 
+  background:#ccc; 
 }
 
 .timeline-item {
@@ -103,6 +114,7 @@
 
 .testo{
   position:absolute;
+  top: 100px;
   left: 500px;
   font-size:x-large;
   color: white;
